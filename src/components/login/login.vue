@@ -27,7 +27,7 @@
           <b-form-input
             id="input-1"
             v-model="loginData.pass"
-            type="text"
+            type="password"
             required
             placeholder="Contraseña"
           ></b-form-input>
