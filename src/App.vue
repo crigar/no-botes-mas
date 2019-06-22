@@ -1,11 +1,10 @@
 <template>
-  <div id="app" class="background">
-    <nav>
+  <div id="app">
+    <link rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
 
-        <!-- <router-link to='/'>Home</router-link>
-        <router-link to='/register'>Register</router-link>
-        <router-link to='/login'>Login</router-link> -->
-    </nav>
     <router-view />
   </div>
 </template>
@@ -14,7 +13,7 @@
 .background{
   background-image: url("./assets/images/background.jpg");
   background-repeat: no-repeat;
-  height: 550px;
+  height: 650px;
 }
 .div-opacity{
   background-color: rgba(0, 0, 0, 0.5);

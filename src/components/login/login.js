@@ -7,21 +7,14 @@ export default {
     }
   },
   methods: {
-    login: function(event){
+    login: function(){
       let userExist = Service.auth(this.loginData);
       if (userExist == true) {
-        this.toast('success', 'OK', '¡Bienvenido!');
+        Service.toast('success', 'OK', '¡Bienvenido!');
       }else{
-        this.toast('danger', 'Error', 'El usuario no existe');
+        Service.toast('danger', 'Error', 'El usuario no existe');
       }
-      console.log()
     },
-    toast: function(variant = null, title, message) {
-        this.$bvToast.toast(message, {
-          title: title,
-          variant: variant,
-          solid: true
-        })
-      }
+
   },
 }

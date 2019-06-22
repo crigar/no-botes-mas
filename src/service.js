@@ -7,5 +7,12 @@ export default {
       }
     }
     return false;
-  }
+  },
+  toast: function(variant = null, title, message) {
+      this.$bvToast.toast(message, {
+        title: title,
+        variant: variant,
+        solid: true
+      })
+    }
 }
