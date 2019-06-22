@@ -14,7 +14,7 @@
 .background{
   background-image: url("./assets/images/background.jpg");
   background-repeat: no-repeat;
-  height: 450px;
+  height: 550px;
 }
 .div-opacity{
   background-color: rgba(0, 0, 0, 0.5);
