@@ -2,7 +2,7 @@
   <div class="row p-4">
     <div class="col-sm-4 col-12">
     </div>
-    <div class="col-sm-4 col-12 justify-content-center login p-4">
+    <div class="col-sm-4 col-12 justify-content-center div-opacity p-4">
       <form v-on:submit="login">
         <b-form-group
           id="input-group-1"

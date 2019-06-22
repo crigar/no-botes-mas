@@ -1,9 +1,3 @@
-.background{
-  background-image: url("./../../assets/images/background.jpg");
-  background-repeat: no-repeat;
-  height: 450px;
-}
-
 .title{
   color: white;
   font-size: 140%;

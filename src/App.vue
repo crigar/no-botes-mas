@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="background">
     <nav>
 
         <!-- <router-link to='/'>Home</router-link>
@@ -10,5 +10,18 @@
   </div>
 </template>
 <script></script>
-<style scoped>
+<style >
+.background{
+  background-image: url("./assets/images/background.jpg");
+  background-repeat: no-repeat;
+  height: 450px;
+}
+.div-opacity{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.label-form{
+  color: white;
+}
+
 </style>
