@@ -9,8 +9,8 @@
               <hr class="divider my-4">
               <p class="text-muted mb-5">Alimentos de interes</p>
               <div class="row">
-                <div class="col-md-4" v-for="index in [0,1,2,3,4,5,6,7,8,8]">
-                  <b-badge variant="success">Papaya</b-badge>
+                <div class="col-md-4" v-for="index in ['Papa','Carne','Frutas','Verduras','Principios']">
+                  <b-badge variant="success">{{index}}</b-badge>
                 </div>
               </div>
               <hr class="divider my-4">
