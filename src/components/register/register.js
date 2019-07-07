@@ -1,16 +1,21 @@
-//import Service from '@/service.js';
+import Service from '@/service.js';
 import Data from '@/data.js';
 
 export default {
+  name: 'register',
   data: function(){
     return {
       registerData: {},
+
     }
   },
   methods: {
     register: function(){
-      let newUser = { username: this.registerData.username, pass: this.registerData.pass };
-      Data.users.push(newUser);
+      Service.toast(this,'success', 'OK', '¡Registro exitoso!');
+      let component = this;
+      setTimeout(function() {
+          component.$router.push('/');
+      }, 1000);
     },
   },
 }

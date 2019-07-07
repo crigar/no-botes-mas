@@ -6,7 +6,7 @@
       <form v-on:submit="login">
         <b-form-group
           id="input-group-1"
-          label="Usuario:"
+          label="Correo:"
           label-for="input-1"
           class="label-form"
         >
@@ -15,7 +15,7 @@
             v-model="loginData.username"
             type="text"
             required
-            placeholder="Nombre de usuario"
+            placeholder="Correo electronico"
           ></b-form-input>
         </b-form-group>
         <b-form-group
@@ -35,7 +35,8 @@
         <span>
           <b-button
             type="submit"
-            variant="primary">Ingresar
+            variant="primary"
+            >Ingresar
           </b-button>
         </span>
         <span class="p-2">
