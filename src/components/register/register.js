@@ -1,5 +1,4 @@
 import Service from '@/service.js';
-import Data from '@/data.js';
 
 export default {
   name: 'register',

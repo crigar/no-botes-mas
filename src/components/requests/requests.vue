@@ -11,7 +11,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-4" v-for="request in requests" v-on:click="getEntity(request.id)" >
+            <div class="col-md-4" v-for="request in requests" v-on:click="getEntity(request.id)" v-bind:key="request">
               <b-card
                 :title="request.name"
                 img-src="https://picsum.photos/600/300/?image=25"

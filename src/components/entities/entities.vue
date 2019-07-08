@@ -1,5 +1,5 @@
 <template>
-    <div >  
+    <div >
       <!-- Services -->
       <section class="page-section p-4" id="services">
         <div class="container">
@@ -10,7 +10,7 @@
             </div>
           </div>
           <div class="row text-center">
-            <div class="col-md-4" v-for="entity in entities" v-on:click="getEntity(entity.id)">
+            <div class="col-md-4" v-for="entity in entities" v-on:click="getEntity(entity.id)" v-bind:key="entity">
               <b-card
                 :title="entity.name"
                 img-src="https://picsum.photos/600/300/?image=25"
@@ -24,13 +24,13 @@
                 <b-card-text>
                   {{entity.description}}
                 </b-card-text>
-                <span v-for="index in [1,2,3,4,5]">
+                <span v-for="index in [1,2,3,4,5]" v-bind:key="index">
+                  <p v-if="5==4">{{index}}</p>
                   <i class="fas fa-star"
                      v-bind:class="{ 'star-active': true }">
                      </i>
                 </span>
               </b-card>
-              </p>
             </div>
           </div>
         </div>

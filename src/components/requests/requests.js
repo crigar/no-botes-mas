@@ -1,4 +1,3 @@
-import Data from '@/data.js';
 import Service from '@/service.js';
 export default {
   data: function(){
