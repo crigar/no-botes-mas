@@ -43,7 +43,7 @@
           </div>
           <hr class="divider my-4">
           <div class="row">
-            <div class="col-md-4" v-for="tip in data[food]">
+            <div class="col-md-4" v-for="tip in data[food]" v-bind:key="tip">
               <b-card
                 no-body
                 style="max-width: 20rem;"

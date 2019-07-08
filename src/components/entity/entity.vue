@@ -9,7 +9,7 @@
               <hr class="divider my-4">
               <p class="text-muted mb-5">Alimentos de interes</p>
               <div class="row">
-                <div class="col-md-4" v-for="index in ['Papa','Carne','Frutas','Verduras','Principios']">
+                <div class="col-md-4" v-for="index in ['Papa','Carne','Frutas','Verduras','Principios']" v-bind:key="index">
                   <b-badge variant="info">{{index}}</b-badge>
                 </div>
               </div>
@@ -18,7 +18,7 @@
           </div>
           <div class="row text-center" v-if="type == 'requests'">
             <div class="col-md-12">
-              <span class="fa-stack fa-4x" v-for="index in [1,2,3,4,5]">
+              <span class="fa-stack fa-4x" v-for="index in [1,2,3,4,5]" v-bind:key="index">
                 <i class="fa fa-star"
                    @mouseover="mouseover = index"
                    @mouseleave="mouseover = undefined"

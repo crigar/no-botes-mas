@@ -21,10 +21,10 @@ export default {
   },
   methods: {
     sendNewFood: function(){
-      console.log(this.newFood)
+      //console.log(this.newFood)
     },
     prueba: function(){
-      console.log('entro')
+      //console.log('entro')
     },
   },
   components: {},

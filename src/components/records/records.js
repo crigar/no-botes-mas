@@ -32,10 +32,10 @@ export default {
   },
   methods: {
     sendNewFood: function(){
-      console.log(this.newFood)
+      //console.log(this.newFood)
     },
-    entity: function(record){
-      console.log(record)
+    entity: function(){
+      //console.log(record)
     },
   },
   components: {},
