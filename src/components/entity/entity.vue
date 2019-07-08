@@ -5,12 +5,12 @@
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-8 text-center">
-              <h2 class="mt-0">{{entity.name}}</h2>
+              <h2 class="mt-0">Fundacion x</h2>
               <hr class="divider my-4">
               <p class="text-muted mb-5">Alimentos de interes</p>
               <div class="row">
                 <div class="col-md-4" v-for="index in ['Papa','Carne','Frutas','Verduras','Principios']">
-                  <b-badge variant="success">{{index}}</b-badge>
+                  <b-badge variant="info">{{index}}</b-badge>
                 </div>
               </div>
               <hr class="divider my-4">

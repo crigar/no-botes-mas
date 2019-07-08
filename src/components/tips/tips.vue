@@ -20,54 +20,50 @@
                 id="input-group-1"
                 label="Tipo de Alimento"
                 label-for="input-1"
+
               >
                 <b-form-select
                   id="input-1"
                   required
                   placeholder="Correo electronico"
+                  v-model="food"
                 >
-                  <option value="restaurante" selected="true">Carne</option>
-                  <option value="fundacion">Frutas</option>
+                  <option value="carne" selected="true">Carne</option>
+                  <option value="frutas">Frutas</option>
                 </b-form-select>
               </b-form-group>
             </div>
           </div>
+          <div class="row text-center">
+            <div class="col-md-12">
+              <img v-if="food == 'carne'" src="./../../assets/images/carne.jpg" alt="">
+              <img v-if="food == 'frutas'" src="./../../assets/images/frutas.jpg" alt="">
+            </div>
+
+          </div>
           <hr class="divider my-4">
           <div class="row">
-            <div class="col-md-4" v-for="tip in tips">
+            <div class="col-md-4" v-for="tip in data[food]">
               <b-card
                 no-body
                 style="max-width: 20rem;"
-                img-src="https://placekitten.com/380/200"
+                img-src=""
                 img-alt="Image"
                 img-top
 
               >
-                <h4 slot="header">Hello World</h4>
+                <h4 slot="header">{{food}}</h4>
 
                 <b-card-body>
-                  <b-card-title>Card Title</b-card-title>
-                  <b-card-sub-title class="mb-2">Card Sub Title</b-card-sub-title>
+                  <b-card-title>{{tip.entity}}</b-card-title>
+                  <b-card-sub-title class="mb-2">{{tip.address}}</b-card-sub-title>
                   <b-card-text>
-                    Some quick example text to build on the card title and make up the bulk of the card's
-                    content.
+                    {{tip.description}}
                   </b-card-text>
                 </b-card-body>
 
-                <b-list-group flush>
-                  <b-list-group-item>Cras justo odio</b-list-group-item>
-                  <b-list-group-item>Dapibus ac facilisis in</b-list-group-item>
-                  <b-list-group-item>Vestibulum at eros</b-list-group-item>
-                </b-list-group>
 
-                <b-card-body>
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
-                </b-card-body>
-
-                <b-card-footer>This is a footer</b-card-footer>
-
-                <b-card-img src="https://placekitten.com/480/210" alt="Image" bottom></b-card-img>
+                <!--  -->
               </b-card>
             </div>
           </div>

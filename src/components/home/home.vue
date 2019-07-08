@@ -42,36 +42,44 @@
       <!-- Services -->
       <section class="page-section p-4" id="services">
         <div class="container">
-          <div class="row">
+          <div class="row p-4">
             <div class="col-lg-12 text-center">
               <h2 class="section-heading text-uppercase">Servicios</h2>
-              <h3 class="section-subheading text-muted">En la aplicacion puedes encontrar los siguientes servicios</h3>
+              <h3 class="section-subheading text-muted">
+                En la aplicacion puedes encontrar los siguientes servicios
+              </h3>
             </div>
           </div>
           <div class="row text-center">
             <div class="col-md-4">
               <span class="fa-stack fa-4x">
                 <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                <i class="fas fa-hand-holding-heart fa-stack-1x fa-inverse"></i>
               </span>
               <h4 class="service-heading">Fundaciones</h4>
-              <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+              <p class="text-muted">
+                Aqui puedes ver las fundaciones vinculadas a la aplicación
+              </p>
             </div>
             <div class="col-md-4">
               <span class="fa-stack fa-4x">
                 <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+                <i class="fas fa-utensils fa-stack-1x fa-inverse"></i>
               </span>
               <h4 class="service-heading">Restaurantes</h4>
-              <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+              <p class="text-muted">
+                Podras ver los restaurantes vinculados a la aplicación
+              </p>
             </div>
             <div class="col-md-4">
               <span class="fa-stack fa-4x">
                 <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
+                <i class="far fa-calendar-check fa-stack-1x fa-inverse"></i>
               </span>
               <h4 class="service-heading">Consejos</h4>
-              <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+              <p class="text-muted">
+                Es posible ver consejos de otras entidades para evitar el desperdicio de alimentos
+              </p>
             </div>
           </div>
           <div class="row text-center">
@@ -81,23 +89,30 @@
                 <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
               </span>
               <h4 class="service-heading">Alimentos</h4>
-              <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+              <p class="text-muted">
+                Podras gestionar los alimentos que maneja tu entidad
+              </p>
             </div>
             <div class="col-md-4">
               <span class="fa-stack fa-4x">
                 <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+                <i class="fas fa-bell fa-stack-1x fa-inverse"></i>
               </span>
               <h4 class="service-heading">Solicitudes</h4>
-              <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+              <p class="text-muted">
+                Sabras cuando una entidad quiere contactarte
+              </p>
             </div>
             <div class="col-md-4">
               <span class="fa-stack fa-4x">
                 <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
+                <i class="far fa-newspaper fa-stack-1x fa-inverse"></i>
               </span>
               <h4 class="service-heading">Historial</h4>
-              <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+              <p class="text-muted">
+                Veras un historial de entidades con las que has intercambiado
+                alimentos
+              </p>
             </div>
           </div>
         </div>
@@ -117,7 +132,7 @@
               <div class="team-member">
                 <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
                 <h4>Maria Gaviria</h4>
-                <p class="text-muted">Lead Designer</p>
+                <!-- <p class="text-muted">Lead Designer</p> -->
                 <ul class="list-inline social-buttons">
                   <li class="list-inline-item">
                     <a href="#">
@@ -141,7 +156,7 @@
               <div class="team-member">
                 <img class="mx-auto rounded-circle" src="img/team/2.jpg" alt="">
                 <h4>Cristian Garcia</h4>
-                <p class="text-muted">Lead Marketer</p>
+                <!-- <p class="text-muted">Lead Marketer</p> -->
                 <ul class="list-inline social-buttons">
                   <li class="list-inline-item">
                     <a href="#">
@@ -165,7 +180,7 @@
               <div class="team-member">
                 <img class="mx-auto rounded-circle" src="img/team/3.jpg" alt="">
                 <h4>Paula Gonzalez</h4>
-                <p class="text-muted">Lead Developer</p>
+                <!-- <p class="text-muted">Lead Developer</p> -->
                 <ul class="list-inline social-buttons">
                   <li class="list-inline-item">
                     <a href="#">
@@ -191,7 +206,7 @@
               <div class="team-member">
                 <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
                 <h4>Cristian Cristancho</h4>
-                <p class="text-muted">Lead Designer</p>
+                <!-- <p class="text-muted">Lead Designer</p> -->
                 <ul class="list-inline social-buttons">
                   <li class="list-inline-item">
                     <a href="#">
@@ -215,7 +230,7 @@
               <div class="team-member">
                 <img class="mx-auto rounded-circle" src="img/team/2.jpg" alt="">
                 <h4>Julian Baron</h4>
-                <p class="text-muted">Lead Marketer</p>
+                <!-- <p class="text-muted">Lead Marketer</p> -->
                 <ul class="list-inline social-buttons">
                   <li class="list-inline-item">
                     <a href="#">
@@ -241,7 +256,7 @@
           </div>
           <div class="row">
             <div class="col-lg-8 mx-auto text-center">
-              <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+              <p class="large text-muted">Universidad Nacional de Colombia</p>
             </div>
           </div>
         </div>

@@ -12,8 +12,10 @@ export default {
         },
       },
       food: [
-        {name: 'asdf', expireDate: 'aasdfsfda'},
-        {name: 'asdf', expireDate: 'aasdfsfda'}
+        {name: 'Carne', expireDate: '08/09/2019'},
+        {name: 'Frutas', expireDate: '09/02/2019'},
+        {name: 'Verduras', expireDate: '10/02/2019'},
+        {name: 'Granos', expireDate: '10/15/2019'},
       ],
     }
   },

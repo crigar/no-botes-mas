@@ -30,7 +30,7 @@
                 </b-form-group>
                 <b-form-group
                   id="input-group-1"
-                  label="Descripcion:"
+                  label="Fecha de Vencimiento:"
                   label-for="input-1"
                 >
                   <b-form-input

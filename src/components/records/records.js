@@ -5,15 +5,28 @@ export default {
       newFood: {},
       fields: {
         'name': {
-          label: 'Alimento',
+          label: 'Entidad',
+        },
+        'address': {
+          label: 'Dirección',
+        },
+        'phone': {
+          label: 'Telefono',
+        },
+        'email': {
+          label: 'Correo',
         },
         'expireDate': {
-          label: 'Fecha de vencimiento',
+          label: 'Fecha',
         },
       },
       food: [
-        {name: 'asdf', expireDate: 'aasdfsfda'},
-        {name: 'asdf', expireDate: 'aasdfsfda'}
+        {name: 'asdf', address:'Cra 5B no 13A 36', phone: '3203536173', email: 'abcd@gmail.com', expireDate: 'aasdfsfda'},
+        {name: 'asdf', address:'Cra 5B no 13A 36', phone: '3203536173', email: 'abcd@gmail.com', expireDate: 'aasdfsfda'},
+        {name: 'asdf', address:'Cra 5B no 13A 36', phone: '3203536173', email: 'abcd@gmail.com', expireDate: 'aasdfsfda'},
+        {name: 'asdf', address:'Cra 5B no 13A 36', phone: '3203536173', email: 'abcd@gmail.com', expireDate: 'aasdfsfda'},
+        {name: 'asdf', address:'Cra 5B no 13A 36', phone: '3203536173', email: 'abcd@gmail.com', expireDate: 'aasdfsfda'},
+        {name: 'asdf', address:'Cra 5B no 13A 36', phone: '3203536173', email: 'abcd@gmail.com', expireDate: 'aasdfsfda'},
       ],
     }
   },
