@@ -1,4 +1,5 @@
-
+import Data from '@/data.js';
+import Service from '@/service.js';
 export default {
   data: function(){
     return {
@@ -7,15 +8,14 @@ export default {
   },
   methods: {
     login: function(){
-      let component = this
-      component.$router.push('/index');
-      localStorage.setItem('user', JSON.stringify({type: 'restaurante'}));
-      // let userExist = Service.auth(this.loginData);
-      // if (userExist == true) {
-      //   Service.toast(this,'success', 'OK', '¡Bienvenido!');
-      // }else{
-      //   Service.toast(this,'danger', 'Error', 'El usuario no existe');
-      // }
+      let component = this;
+      let response = Service.auth(this.loginData);
+      if (response.success == true) {
+        Service.setUser(response.user);
+        component.$router.push('/index');
+      }else{
+        Service.toast(this,'danger', 'Error', 'El usuario no existe o el usuario y contraseña son erroneos');
+      }
     },
   },
 }

@@ -11,7 +11,7 @@ export default {
         name: 'Activo',
         description: 'Los restaurantes podran ver tu restaurante e iniciar comunicacion',
       },
-
+      start: this.init(),
     }
   },
   methods: {
@@ -45,6 +45,9 @@ export default {
       else
         this.$router.push('/');
     },
+    init: function(){
+      Service.toast(this,'success', 'OK', '¡Bienvenido!');
+    }
   },
   components: {login, register},
 }

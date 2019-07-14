@@ -15,24 +15,23 @@
           </div>
           <div class="row text-center">
             <div class="col-md-12">
-              <form v-on:submit="tip">
+              <form v-on:submit="sendTip">
                 <b-form-group
                   id="input-group-1"
-                  label="Tipo de Alimento"
+                  label="Nombre de Alimento"
                   label-for="input-1"
                 >
-                  <b-form-select
-                    id="input-1"
-                    required
-                    v-model="tip.food"
-                  >
-                    <option value="restaurante" selected="true">Carne</option>
-                    <option value="fundacion">Frutas</option>
-                  </b-form-select>
+                <b-form-input
+                  id="input-1"
+                  v-model="tip.name"
+                  type="text"
+                  required
+                  placeholder="Nombre"
+                ></b-form-input>
                 </b-form-group>
                 <b-form-group
                   id="input-group-1"
-                  label="Descripcion:"
+                  label="Consejo:"
                   label-for="input-1"
                 >
                   <b-form-input

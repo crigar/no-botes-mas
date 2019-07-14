@@ -41,11 +41,23 @@
                     placeholder=""
                   ></b-form-input>
                 </b-form-group>
+                <b-form-group
+                  id="input-group-1"
+                  label="Descripcion"
+                  label-for="input-1"
+                >
+                <b-form-input
+                  id="input-1"
+                  v-model="newFood.description"
+                  type="text"
+                  required
+                  placeholder="Descripcion"
+                ></b-form-input>
+                </b-form-group>
                 <span>
                   <b-button
                     type="submit"
                     variant="primary"
-
                     >Agregar
                   </b-button>
                 </span>
@@ -54,7 +66,12 @@
           </div>
           <div class="row text-center">
             <div class="col-md-12">
-              <b-table striped hover :items="food" :fields="fields" @row-clicked="prueba">
+              <b-table striped hover :items="user.food" :fields="fields" @row-clicked="">
+                <template slot="delete" slot-scope="row">
+                  <b-button size="sm" @click="deleteFood( row.item.id )" class="mr-1">
+                    Eliminar
+                  </b-button>
+                </template>
               </b-table>
             </div>
           </div>

@@ -20,7 +20,7 @@
                   <a class="nav-link js-scroll-trigger" href="#team">Equipo</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link js-scroll-trigger" href="#team">Registro</a>
+                  <a class="nav-link js-scroll-trigger" >Registro</a>
                 </li>
               </ul>
             </div>
@@ -118,6 +118,44 @@
         </div>
       </section>
 
+      <!-- Restaurantes -->
+      <section class="page-section p-4" id="services">
+        <div class="container">
+          <div class="row p-4">
+            <div class="col-lg-12 text-center">
+              <h2 class="section-heading text-uppercase">Restaurantes Destacados</h2>
+              <h3 class="section-subheading text-muted">
+                Estos son los restaurantes que más contribuyeron a no desperdiciar alimentos y ayudar a los que más lo necesitan
+              </h3>
+            </div>
+          </div>
+          <div class="row text-center">
+            <div class="col-md-6">
+              <i class="fas fa-medal fa-3x medal"></i>
+              <span class="fa-stack fa-4x">
+                <i class="fas fa-utensils "></i>
+              </span>
+              <i class="fas fa-medal fa-3x medal"></i>
+              <h4 class="service-heading">Punto 26</h4>
+              <p class="text-muted">
+                El Recuerdo, Ac. 26 #33 - 69, Bogotá
+              </p>
+            </div>
+            <div class="col-md-6">
+              <i class="fas fa-medal fa-3x medal"></i>
+              <span class="fa-stack fa-4x">
+                <i class="fas fa-utensils"></i>
+              </span>
+              <i class="fas fa-medal fa-3x medal"></i>
+              <h4 class="service-heading">La vecina</h4>
+              <p class="text-muted">
+                Cl. 45 ##28-17, Bogotá
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Team -->
       <section class="bg-light page-section p-4" id="team">
         <div class="container">
@@ -130,7 +168,7 @@
           <div class="row">
             <div class="col-sm-4">
               <div class="team-member">
-                <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
+                <img class="mx-auto rounded-circle" src="./../../assets/images/maria.jpg" alt="">
                 <h4>Maria Gaviria</h4>
                 <!-- <p class="text-muted">Lead Designer</p> -->
                 <ul class="list-inline social-buttons">
@@ -154,7 +192,7 @@
             </div>
             <div class="col-sm-4">
               <div class="team-member">
-                <img class="mx-auto rounded-circle" src="img/team/2.jpg" alt="">
+                <img class="mx-auto rounded-circle" src="./../../assets/images/cristian.jpg" alt="">
                 <h4>Cristian Garcia</h4>
                 <!-- <p class="text-muted">Lead Marketer</p> -->
                 <ul class="list-inline social-buttons">
@@ -178,7 +216,7 @@
             </div>
             <div class="col-sm-4">
               <div class="team-member">
-                <img class="mx-auto rounded-circle" src="img/team/3.jpg" alt="">
+                <img class="mx-auto rounded-circle" src="./../../assets/images/paula.jpg" alt="">
                 <h4>Paula Gonzalez</h4>
                 <!-- <p class="text-muted">Lead Developer</p> -->
                 <ul class="list-inline social-buttons">
@@ -204,7 +242,7 @@
           <div class="row">
             <div class="col-sm-4">
               <div class="team-member">
-                <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
+                <img class="mx-auto rounded-circle" src="./../../assets/images/cristancho.jpg" alt="">
                 <h4>Cristian Cristancho</h4>
                 <!-- <p class="text-muted">Lead Designer</p> -->
                 <ul class="list-inline social-buttons">
@@ -228,7 +266,7 @@
             </div>
             <div class="col-sm-4">
               <div class="team-member">
-                <img class="mx-auto rounded-circle" src="img/team/2.jpg" alt="">
+                <img class="mx-auto rounded-circle" src="./../../assets/images/julian.jpg" alt="">
                 <h4>Julian Baron</h4>
                 <!-- <p class="text-muted">Lead Marketer</p> -->
                 <ul class="list-inline social-buttons">

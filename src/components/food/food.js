@@ -1,7 +1,8 @@
-
+import Service from '@/service.js';
 export default {
   data: function(){
     return {
+      user: Service.getUser(),
       newFood: {},
       fields: {
         'name': {
@@ -10,22 +11,27 @@ export default {
         'expireDate': {
           label: 'Fecha de vencimiento',
         },
+        'description': {
+          label: 'Descripcion',
+        },
+        'delete': {
+          label: 'Eliminar',
+        },
       },
-      food: [
-        {name: 'Carne', expireDate: '08/09/2019'},
-        {name: 'Frutas', expireDate: '09/02/2019'},
-        {name: 'Verduras', expireDate: '10/02/2019'},
-        {name: 'Granos', expireDate: '10/15/2019'},
-      ],
     }
   },
   methods: {
     sendNewFood: function(){
-      //console.log(this.newFood)
+      Service.newFood(this.newFood);
+      this.user = Service.getUser();
+      Service.toast(this,'success', 'OK', 'Alimento agregado');
     },
-    prueba: function(){
-      //console.log('entro')
+    deleteFood: function( id ){
+      Service.deleteFood( id );
+      this.user = Service.getUser();
+      console.log(id)
     },
+
   },
   components: {},
 }

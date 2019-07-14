@@ -20,11 +20,11 @@ const routes = [
     {
       path: '/index', component: Index,
       children: [
-        { path: '/entities', name: '', component: Entities, props: true  },
+        { path: '/fundations', name: '', component: Entities, props: true  },
         { path: '/restaurants', name: '', component: Entities, props: true  },
         { path: '/entities/:id', name: 'entity', component: Entity, props: true },
         { path: '/requests/:id', component: Entity, props: true },
-        { path: '/requests', name: '', component: Requests },
+        { path: '/requests', name: '', component: Entities },
         { path: '/tips', name: '', component: Tips },
         { path: '/tip', name: '', component: Tip },
         { path: '/food', name: '', component: Food },

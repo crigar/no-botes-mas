@@ -5,15 +5,16 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-12 text-center">
-              <h2 class="section-heading text-uppercase title">{{$parent.reference.titleEntity}}</h2>
+              <h2 class="section-heading text-uppercase title">{{title}}</h2>
               <hr class="divider my-4">
             </div>
           </div>
           <div class="row text-center">
-            <div class="col-md-4" v-for="entity in entities" v-on:click="getEntity(entity.id)" v-bind:key="entity">
+            <div class="col-md-4" v-for="entity in entities" v-on:click="getEntity(entity.id, entity.type)" >
+              <i class="fas fa-hand-holding-heart p-4 fundation"></i>
               <b-card
                 :title="entity.name"
-                img-src="https://picsum.photos/600/300/?image=25"
+                img-src=""
                 img-alt="Image"
                 img-top
                 tag="article"
@@ -22,12 +23,12 @@
 
               >
                 <b-card-text>
-                  {{entity.description}}
+                  {{entity.city}} - {{entity.address}}
                 </b-card-text>
                 <span v-for="index in [1,2,3,4,5]" v-bind:key="index">
                   <p v-if="5==4">{{index}}</p>
                   <i class="fas fa-star"
-                     v-bind:class="{ 'star-active': true }">
+                     v-bind:class="{ 'star-active': index <= entity.qualification }">
                      </i>
                 </span>
               </b-card>

@@ -14,7 +14,7 @@
           </div>
           <div class="row text-center">
             <div class="col-md-12">
-              <b-table striped hover :items="food" :fields="fields" @row-clicked="entity">
+              <b-table striped hover :items="user.history" :fields="fields" @row-clicked="entity">
               </b-table>
             </div>
           </div>

@@ -5,24 +5,30 @@
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-8 text-center">
-              <h2 class="mt-0">Fundacion x</h2>
+              <h2 class="mt-0"> {{entity.name}} </h2>
               <hr class="divider my-4">
               <p class="text-muted mb-5">Alimentos de interes</p>
               <div class="row">
-                <div class="col-md-4" v-for="index in ['Papa','Carne','Frutas','Verduras','Principios']" v-bind:key="index">
-                  <b-badge variant="info">{{index}}</b-badge>
-                </div>
+                <b-table striped hover :items="entity.food" :fields="fields" @row-clicked="entity">
+                </b-table>
+
               </div>
               <hr class="divider my-4">
             </div>
           </div>
-          <div class="row text-center" v-if="type == 'requests'">
+          <div class="row text-center" v-if="type == true">
+            <div class="col-md-12">
+              <h2 class="mt-0 ">Descripcion</h2>
+              <p>{{description.value}}</p>
+            </div>
+
             <div class="col-md-12">
               <span class="fa-stack fa-4x" v-for="index in [1,2,3,4,5]" v-bind:key="index">
                 <i class="fa fa-star"
                    @mouseover="mouseover = index"
                    @mouseleave="mouseover = undefined"
-                   v-bind:class="{ 'star-active': index <= mouseover }">
+                   v-on:click="qualification(index)"
+                   v-bind:class="{ 'star-active': index <= mouseover || index <= entity.qualification }">
                 </i>
               </span>
               <h4 class="service-heading">¿Has intercambiado alimentos con esta entidad?</h4>
@@ -31,7 +37,7 @@
               </p>
             </div>
           </div>
-          <div class="row text-center" v-if="type == 'entities'">
+          <div class="row text-center" v-if="type == false">
             <div class="col-md-12">
               <span class="fa-stack fa-4x div-options"
                     v-on:click="changeState()"
@@ -45,6 +51,24 @@
               <p class="text-muted">
                 {{request.description}}
               </p>
+            </div>
+            <div class="col-md-12">
+              <form v-on:submit="newRequest">
+                <b-form-group
+                  id="input-group-1"
+                  label="Descripcion de la Solicitud"
+                  label-for="input-1"
+                >
+                <b-form-input
+                  id="input-1"
+                  v-model="description.value"
+                  type="text"
+                  required
+                  placeholder="Cuerpo de la solicitud"
+                ></b-form-input>
+                </b-form-group>
+
+              </form>
             </div>
           </div>
           <hr class="divider my-4">

@@ -11,10 +11,11 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-4" v-for="request in requests" v-on:click="getEntity(request.id)" v-bind:key="request">
+            <div class="col-md-4" v-for="(request, index) in requests" v-on:click="getEntity(request.id)" >
+              <i class="fas fa-hand-holding-heart p-4 fundation"></i>
               <b-card
                 :title="request.name"
-                img-src="https://picsum.photos/600/300/?image=25"
+                img-src=""
                 img-alt="Image"
                 img-top
                 tag="article"
@@ -23,7 +24,7 @@
 
               >
                 <b-card-text>
-                  Some quick example text to build on the card title and make up the bulk of the card's content.
+                  Descripcion de la fundacion, direccion etc
                 </b-card-text>
 
               </b-card>

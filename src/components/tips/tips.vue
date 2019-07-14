@@ -14,26 +14,7 @@
               <b-button variant="primary" to="/tip">Nuevo Tip</b-button>
             </div>
           </div>
-          <div class="row text-center">
-            <div class="col-md-12">
-              <b-form-group
-                id="input-group-1"
-                label="Tipo de Alimento"
-                label-for="input-1"
 
-              >
-                <b-form-select
-                  id="input-1"
-                  required
-                  placeholder="Correo electronico"
-                  v-model="food"
-                >
-                  <option value="carne" selected="true">Carne</option>
-                  <option value="frutas">Frutas</option>
-                </b-form-select>
-              </b-form-group>
-            </div>
-          </div>
           <div class="row text-center">
             <div class="col-md-12">
               <img v-if="food == 'carne'" src="./../../assets/images/carne.jpg" alt="">
@@ -43,7 +24,7 @@
           </div>
           <hr class="divider my-4">
           <div class="row">
-            <div class="col-md-4" v-for="tip in data[food]" v-bind:key="tip">
+            <div class="col-md-4" v-for="tip in tips">
               <b-card
                 no-body
                 style="max-width: 20rem;"
@@ -52,11 +33,11 @@
                 img-top
 
               >
-                <h4 slot="header">{{food}}</h4>
+                <h4 slot="header">{{tip.name}}</h4>
 
                 <b-card-body>
-                  <b-card-title>{{tip.entity}}</b-card-title>
-                  <b-card-sub-title class="mb-2">{{tip.address}}</b-card-sub-title>
+                  <b-card-title>{{tip.entity.name}}</b-card-title>
+                  <b-card-sub-title class="mb-2">{{tip.entity.address}}</b-card-sub-title>
                   <b-card-text>
                     {{tip.description}}
                   </b-card-text>

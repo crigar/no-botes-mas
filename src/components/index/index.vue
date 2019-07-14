@@ -16,7 +16,7 @@
                   <a class="nav-link js-scroll-trigger" v-on:click="navLink('index')">Servicios</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link js-scroll-trigger" v-on:click="navLink('restaurants')">Fundaciones</a>
+                  <a class="nav-link js-scroll-trigger" v-on:click="navLink('fundations')">Fundaciones</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" v-on:click="navLink('restaurants')">Restaurantes</a>
@@ -48,7 +48,7 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-12 text-center">
-              <h2 class="section-heading text-uppercase">{{user.type}}</h2>
+              <h2 class="section-heading text-uppercase">{{user.name}}</h2>
               <h3 class="section-subheading text-muted"></h3>
             </div>
           </div>
@@ -71,17 +71,16 @@
           </div>
           <hr class="divider my-4">
           <div class="row text-center">
-            <div class="col-md-4 div-options" v-on:click="service('entities')">
+            <div class="col-md-4 div-options" v-on:click="service('fundations')">
               <span class="fa-stack fa-4x">
-                <i class="fas fa-hand-holding-heart" v-if="user.type == 'restaurante'"></i>
-                <i class="fas fa-utensils" v-if="user.type != 'restaurante'"></i>
+                <i class="fas fa-hand-holding-heart" ></i>
               </span>
-              <h4 class="service-heading">{{reference.titleEntity }}</h4>
+              <h4 class="service-heading">Fundaciones</h4>
               <p class="text-muted">
-                {{reference.descriptionEntity}}
+                Aqui encontraras las fundaciones que estan interesadas en compartir alimentos.
               </p>
             </div>
-            <div class="col-md-4 div-options" v-on:click="service('entities')" v-if="user.type == 'restaurante'">
+            <div class="col-md-4 div-options" v-on:click="service('restaurants')" >
               <span class="fa-stack fa-4x">
                 <i class="fas fa-utensils"></i>
               </span>
