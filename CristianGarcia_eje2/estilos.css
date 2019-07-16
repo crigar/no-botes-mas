@@ -1,0 +1,147 @@
+.principal{
+  background-image: url("./imagenes/img1.jpg");
+  height: 630px;
+  background-repeat: no-repeat;  /*para que no se duplique la imagen */
+}
+.ubicacion{
+  background-image: url("./imagenes/img2.jpg");
+  height: 630px;
+}
+.habitantes{
+  background-image: url("./imagenes/img3.jpg");
+  height: 630px;
+}
+.actividades{
+  background-image: url("./imagenes/img5.jpg");
+  height: 630px;
+}
+.historia{
+  background-image: url("./imagenes/img4.jpg");
+  height: 630px;
+}
+.divUbic{
+  background-image: url("./imagenes/ubic1.jpg");
+  height: 315px;
+}
+
+.titulo {
+  color: white;
+  padding-top: 9%; /*espacio entre el contenido y el borde superior*/
+}
+.titulo1 {
+  font-size: 50px;
+  color: white;
+}
+.titulo1:hover {
+  color: #8abeff;
+  opacity: 0.7;
+}
+.titulo2 {
+  color: white;
+  font-size: 200px;
+}
+.nav{
+  font-size: 30px;
+  width: 100%;
+  background-color: black;
+  opacity: 0.7;
+}
+.opciones{
+  padding-left: 3%;
+  color: white;
+  text-decoration:none /*Para que no se subraye las palabras dentro de los objetos de esta clase*/
+}
+.opciones:hover {
+  color: green;
+}
+.cont {
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-top: 4%;
+  display: table; /* facilita la visualizacion de los divs de manera horizontal */
+  width: 100%;
+}
+.cont1{
+  width: 50%;
+  float: left; /* facilita la visualizacion de los divs de manera horizontal */
+}
+.cont2{
+  float: right; /* facilita la visualizacion de los divs de manera horizontal */
+  width: 50%;
+}
+a{
+  text-decoration: none /* para que el texto de los ancor no sea subrayado */
+}
+.act1{
+  background-image: url("./imagenes/act1.jpg");
+  height: 259px;
+  width: 78%;
+}
+.act2{
+  background-image: url("./imagenes/act2.jpg");
+  height: 315px;
+}
+.act3{
+  width: 100%;
+}
+.act4{
+  background-image: url("./imagenes/act4.jpg");
+  height: 315px;
+}
+.act5{
+  background-image: url("./imagenes/act5.jpg");
+  height: 315px;
+}
+.hist1{
+  background-image: url("./imagenes/hist1.jpg");
+  height: 260px;
+  width: 57%;
+}
+.dep1{
+  width: 70%;
+}
+
+.mus1{
+  width: 100%;
+}
+.arte1{
+  width: 90%;
+}
+.arte2{
+  width: 100%;
+}
+.contHab{
+  padding-top: 6%;
+}
+.map{
+  padding-top: 2%;
+}
+
+p{
+  padding-right: 10%;
+}
+/* se activa la clase unicamente cuando la medida horizontal en pixeles sea menor o igual a 480px*/
+@media only screen and (max-width: 480px) {
+  .cont3 {
+    float: none;
+    padding-top: 3%;
+  }
+}
+/* se activa la clase unicamente cuando la medida horizontal en pixeles sea menor o igual a 780px*/
+@media only screen and (max-width: 780px) {
+  .cont4 {
+    width: 50%;
+  }
+}
+.sopo{
+  color: white;
+}
+
+.sopo:hover{
+  color: #8abeff;
+  opacity: 0.7;
+}
+
+.isla{
+  width: 100%;
+}
